@@ -7,10 +7,11 @@ spl_autoload_register(
         static $classes = null;
         if ($classes === null) {
             $classes = array(
-                'benutzer' => '/Benutzer.php',
+                'appointment' => '/Appointment.php',
                 'email' => '/Email.php',
                 'nickname' => '/Nickname.php',
-                'user' => '/User.php'
+                'user' => '/User.php',
+                'usercollection' => '/UserCollection.php'
             );
         }
         $cn = strtolower($class);

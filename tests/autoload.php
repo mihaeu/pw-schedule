@@ -7,13 +7,15 @@ spl_autoload_register(
         static $classes = null;
         if ($classes === null) {
             $classes = array(
-                'benutzer' => '/../src/Benutzer.php',
-                'benutzertest' => '/BenutzerTest.php',
+                'appointment' => '/../src/Appointment.php',
+                'appointmenttest' => '/AppointmentTest.php',
                 'email' => '/../src/Email.php',
                 'emailtest' => '/EmailTest.php',
                 'nickname' => '/../src/Nickname.php',
                 'nicknametest' => '/NicknameTest.php',
                 'user' => '/../src/User.php',
+                'usercollection' => '/../src/UserCollection.php',
+                'usercollectiontest' => '/UserCollectionTest.php',
                 'userhelpertrait' => '/UserHelperTrait.php',
                 'usertest' => '/UserTest.php'
             );

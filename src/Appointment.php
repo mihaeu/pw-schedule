@@ -52,6 +52,32 @@ class Appointment
         $this->participants = $participants;
     }
 
+
+    public function room() : Room
+    {
+        return $this->room;
+    }
+
+    public function beginsAt() : DateTimeImmutable
+    {
+        return $this->beginsAt;
+    }
+
+    public function endsAt() : DateTimeImmutable
+    {
+        return $this->endsAt;
+    }
+
+    public function addParticipant(User $participant)
+    {
+        $this->participants->add($participant);
+    }
+
+    public function participants() : UserCollection
+    {
+        return $this->participants;
+    }
+
     /**
      * @param UserCollection $participants
      */
@@ -62,7 +88,6 @@ class Appointment
             throw new InvalidArgumentException('Appointment must have at least one participant');
         }
     }
-
     /**
      * @param DateTimeImmutable $beginsAt
      * @param DateTimeImmutable $endsAt
@@ -76,8 +101,8 @@ class Appointment
         }
     }
 
-    public function room() : Room
+    public function __toString() : string
     {
-        return $this->room;
+        return $this->title->__toString();
     }
 }

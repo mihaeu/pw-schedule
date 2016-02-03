@@ -7,8 +7,15 @@ spl_autoload_register(
         static $classes = null;
         if ($classes === null) {
             $classes = array(
-                'dummy' => '/../src/Dummy.php',
-                'dummytest' => '/DummyTest.php'
+                'benutzer' => '/../src/Benutzer.php',
+                'benutzertest' => '/BenutzerTest.php',
+                'email' => '/../src/Email.php',
+                'emailtest' => '/EmailTest.php',
+                'nickname' => '/../src/Nickname.php',
+                'nicknametest' => '/NicknameTest.php',
+                'user' => '/../src/User.php',
+                'userhelpertrait' => '/UserHelperTrait.php',
+                'usertest' => '/UserTest.php'
             );
         }
         $cn = strtolower($class);

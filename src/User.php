@@ -28,7 +28,8 @@ class User
      */
     public function equals(User $otherUser) : bool
     {
-        return $this->email->__toString() === $otherUser->email()->__toString();
+        return $this->email->__toString() === $otherUser->email()->__toString()
+            && $this->nickname->__toString() === $otherUser->nickname->__toString();
     }
 
     /**
@@ -37,5 +38,10 @@ class User
     public function email() : Email
     {
         return $this->email;
+    }
+
+    public function nickname() : Nickname
+    {
+        return $this->nickname;
     }
 }

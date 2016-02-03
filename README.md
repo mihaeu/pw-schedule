@@ -2,16 +2,16 @@
 
 ## Requirements
 
-Erstellen Sie die Geschäftslogik für einen Bookmark Service (wer damit nichts anfangen kann: Delicious). Hierbei gelten folgende Regeln:
+Erstellen Sie die Geschäftslogik für einen einfachen Terminplaner. Dabei gelten folgende Regeln:
 
- - ein Benutzer hat einen Namen und eine E-Mail
- - das Benutzerpasswort muss mindestens acht Stellen haben und Sonderzeichen enthalten
- - Bookmarks bestehen aus einem Link, einem Kommentar und einem Zeitstempel
- - Benutzer können ihre Bookmarks in Kategorien unterteilen
- - Bookmarks anderer Benutzer können eingesehen werden
- - Wenn ein Benutzer ein Bookmark oder eine Kategorie als privat markiert, ist diese für andere Benutzer nicht mehr einsehbar
- - Bookmarks sollen erst nach Kategorie und danach anhand ihrer Aktualität sortiert werden
- - Benutzer bekommen Empfehlungen von Bookmarks anderer Benutzer, falls diese Benutzer ähnliche Kategorien haben
+ - ein Benutzer ist durch einen Nicknamen und eine Mail-Adresse gekennzeichnet
+ - ein Benutzer kann in verschiedene Terminplaner Termine eintragen
+ - Ein Termin hat ein Anfangs und Enddatum sowie Namen, Raum und Teilnehmer
+ - Jeder Terminplaner hat verschiedene Räume die gebucht werden können
+ - Zu jedem Zeitpunkt darf ein Raum eines Terminplaners nur von einem Termin belegt sein
+ - Teilnehmer können einem Termin auch nachträglich hinzugefügt werden
+ - es soll möglich sein alle Termine eines Terminplaners auf der Konsole auszugeben
+ - es soll möglich sein Terminüberschneidungen eines Benutzers auf der Konsole auszugeben
 
 ## Getting started
 

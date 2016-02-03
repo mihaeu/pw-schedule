@@ -28,6 +28,7 @@ class UserCollectionTest extends PHPUnit_Framework_TestCase
         $user2 = $this->mockUser();
         $collection->add($user1);
         $collection->add($user2);
+        $this->assertEquals($user1, iterator_to_array($collection)[0]);
         $this->assertEquals($user2, iterator_to_array($collection)[1]);
     }
 }

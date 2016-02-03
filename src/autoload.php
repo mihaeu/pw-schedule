@@ -12,6 +12,8 @@ spl_autoload_register(
                 'email' => '/Email.php',
                 'nickname' => '/Nickname.php',
                 'room' => '/Room.php',
+                'roomcollection' => '/RoomCollection.php',
+                'schedule' => '/Schedule.php',
                 'user' => '/User.php',
                 'usercollection' => '/UserCollection.php'
             );

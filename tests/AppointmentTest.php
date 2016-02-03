@@ -37,18 +37,19 @@ class AppointmentTest extends PHPUnit_Framework_TestCase
         );
     }
 
-    public function test()
+    public function testHasRoom()
     {
         $participants = new UserCollection();
         $participants->add($this->mockUser());
+        $room = new Room(1);
         $appointment = new Appointment(
             new DateTimeImmutable(),
             new DateTimeImmutable('+1 days'),
             new AppointmentTitle('Test Appointment'),
-            new Room(1),
+            $room,
             $participants
         );
-        $this->assertNotNull($appointment);
+        $this->assertEquals($room, $appointment->room());
     }
 }
 

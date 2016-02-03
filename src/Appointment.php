@@ -75,4 +75,9 @@ class Appointment
             throw new InvalidArgumentException('Beginning has to be before end');
         }
     }
+
+    public function room() : Room
+    {
+        return $this->room;
+    }
 }

@@ -3,7 +3,7 @@ OK_COLOR=\x1b[32;01m
 ERROR_COLOR=\x1b[31;01m
 WARN_COLOR=\x1b[33;01m
 
-all: phpab tests testdox
+all: phpab tests testdox cov
 
 phpab:
 	php phpab.phar -o src/autoload.php src

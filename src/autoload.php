@@ -8,8 +8,10 @@ spl_autoload_register(
         if ($classes === null) {
             $classes = array(
                 'appointment' => '/Appointment.php',
+                'appointmenttitle' => '/AppointmentTitle.php',
                 'email' => '/Email.php',
                 'nickname' => '/Nickname.php',
+                'room' => '/Room.php',
                 'user' => '/User.php',
                 'usercollection' => '/UserCollection.php'
             );

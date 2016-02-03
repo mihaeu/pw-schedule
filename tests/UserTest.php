@@ -2,6 +2,9 @@
 
 /**
  * @covers User
+ *
+ * @uses Email
+ * @uses Nickname
  */
 class UserTest extends PHPUnit_Framework_TestCase
 {
